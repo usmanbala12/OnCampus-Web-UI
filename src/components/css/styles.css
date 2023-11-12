@@ -107,6 +107,10 @@ this section contains styles for the topbar
     font-weight: 500;
 }
 
+/**
+Upcoming events card
+*/
+
 .ue {
     max-width: 280px;
 }
@@ -164,6 +168,10 @@ this section contains styles for the topbar
     row-gap: 20px;
 }
 
+/** 
+Article card
+*/
+
 .article-card {
     width: 350px;
 }
@@ -180,6 +188,10 @@ this section contains styles for the topbar
 .acard-link {
     color: #00798A;
 }
+
+/**
+Event card and group components
+**/
 
 .event-card, .group-card {
     padding-block: 20px;

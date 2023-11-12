@@ -1,3 +1,7 @@
+/**
+This styles the hero section on the homepage
+**/
+
 .hero {
     height: 550px;
     position: relative;
@@ -118,6 +122,10 @@
     top: 15%;
     font-weight: 600;
 }
+
+/***
+This styles the upcoming events section on the home page
+**/
 
 .upcoming {
     height: auto;
