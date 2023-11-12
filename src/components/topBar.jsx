@@ -1,15 +1,21 @@
 import React from 'react'
+import logo from "../assets/images/logo.png"
 
-const topBar = () => {
+const TopBar = () => {
+  
   return (
-    <div>
-        <span>OnCampus</span>
-        <span>find events</span>
-        <span>create events</span>
-        <span>log in</span>
-        <span>sign up</span>
+    <div className="topBar">
+        <div className="logo-cont">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="topBar-links">
+          <span>Find Events</span>
+          <span>Create Events</span>
+          <span>Log In</span>
+          <span className="signup-btn">Sign Up</span>
+        </div>
     </div>
   )
 }
 
-export default topBar
+export default TopBar

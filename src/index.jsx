@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Root from "./pages/root";
-import Groups from './pages/groups';
-import Events from './pages/events';
+import EventsGroups from './pages/eventsGroups';
 import Home from './pages/home';
 import StartGroup from './pages/startGroup';
+import Login from './pages/login';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Signup from './pages/signup';
 
 const router = createBrowserRouter([
   {
@@ -23,12 +23,8 @@ const router = createBrowserRouter([
         element: <Home /> 
       },
       {
-        path: "groups",
-        element: <Groups />,
-      },
-      {
-        path: "events",
-        element: <Events />,
+        path: "activity",
+        element: <EventsGroups />,
       },
       {
         path: "start-group",
@@ -36,6 +32,14 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/login",
+    element: <Login />
+  },
+  {
+    path: "/signup",
+    element: <Signup />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
